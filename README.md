@@ -17,7 +17,10 @@ DATABASE MANAGEMENT SYSTEM:
 DBMS is a set of programs or software,which can be defined constructed,manipulated, whose overall purpose is to maintain the info and to make sure that the info is available on demand.
 
 DATABASE SYSTEM :
+
 Collection of DataBase and DBMS is called as DataBase System.
+
+
 
 --------------------------------------------- STUCTURED QUERY LANGUAGE (SQL) -----------------------------------------
 
@@ -27,4 +30,8 @@ SQL can perform various tasks like create a table, add data to tables, drop the 
 Types of SQL Commands
 
 There are five types of SQL commands: DDL, DML, DCL, TCL, and DQL.
+
+https://static.javatpoint.com/dbms/images/dbms-sql-command.png![image](https://user-images.githubusercontent.com/72863776/178579851-381958b1-113a-4e2e-aa8d-2854866bb157.png)
+
+
 

@@ -1,4 +1,33 @@
-! (https://d8it4huxumps7.cloudfront.net/bites/wp-content/banners/2021/11/61a076ec620d6_truncate_and_delete_in_sql.png?d=700x400)
+The following points explain the differences between delete and truncate command:
+
+1.The DELETE statement is used when we want to remove some or all of the records from the table, 
+   while the TRUNCATE statement will delete entire rows from a table.
+
+2. DELETE is a DML command as it only modifies the table data, whereas the TRUNCATE is a DDL command.
+
+3. DELETE command can filter the record/tuples by using the WHERE clause. 
+However, the TRUNCATE command does not allow to use WHERE clause, so we cannot filter rows while truncating.
+
+4. DELETE activates all delete triggers on the table to fire. 
+However, no triggers are fired on the truncate operation because it does not operate on individual rows.
+
+5.DELETE performs deletion row-by-row one at a time from the table, in the order, they were processed.
+ However, TRUNCATE operates on data pages instead of rows because it deleted entire table data at a time.
+
+6. DELETE statement only deletes records and does not reset the table's identity,
+ whereas TRUNCATE resets the identity of a particular table.
+
+7. DELETE command require more locks and database resources because it acquires the lock on every deleted row.
+   In contrast, TRUNCATE acquires the lock on the data page before deleting the data page; thus, it requires fewer locks and few resources.
+
+8. DELETE statement makes an entry in the transaction log for each deleted row 
+   whereas, TRUNCATE records the transaction log for each data page.
+
+9. TRUNCATE command is faster than the DELETE command as it deallocates the data pages instead of rows and records 
+data pages instead of rows in transaction logs.
+
+10. Once the record deletes by using the TRUNCATE command, we cannot recover it back. 
+In contrast, we can recover the deleted data back which we removed from the DELETE operation.
 
 
 *** NOTE : Both commands remove only data from the table and structure still persists.

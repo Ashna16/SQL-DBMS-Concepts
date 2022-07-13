@@ -1,0 +1,45 @@
+DML also known as Data Manipulation Language.
+These statements affects the records in table.
+DML commands are insert,uodate and delete.
+
+
+1. INSERT: 
+Command is used to insert data into set of attributes (column), belonging to one row of a table.
+SYNTAX:
+Insert into tablename (column list) values (valuelist);
+EXAMPLE:
+Insert into emp values ('ashna' , '1');
+***** NOTE : In the following syntax the column list is optional, it is only used if entry is to be done in all columns in the 
+same sequence as they appear in the structure.
+
+
+2. UPDATE:
+It is used to update or modify values from existing table.
+It can modify value from single or multiple rows and the values from one or more attributes with a single update commmand.
+SYNTAX: 
+update tablename set columnname= value where condition ;
+EXAMPLE:
+update emp set SGPA=9 where e_name= ashna;
+
+**** NOTE : Where clausnis optional and can be applied when updation is required only on certain records,otherwise update modifies 
+all records from the table.
+
+
+3.DELETE:
+Can be used to remove the records from the table.
+Delete command removes record but the table structure remains.
+SYNTAX:
+delete from tablename where condition;
+        OR
+delete columnname from tablename;
+
+EXAMPLE:
+delete e_id from emp;
+      OR
+delete from student where sid='101';
+
+*** NOTE : where claus specify record to be deleted otherwise it deletes all the records from the table.
+
+
+
+ 

@@ -1,0 +1,42 @@
+char(size) - it is a fixed length char datatype.
+           - min size is 1 byte and maximum size is 2000 byte.
+           - Eg: s_name char(5);
+
+Varchar(size) - A VARIABLE length string (can contain letters, numbers, and special characters).
+              - min size is 1 byte and maximum size is 2000 byte.
+              - Eg: s_name Varchar(5);
+
+Varchar2(size) - A VARIABLE length string (can contain letters, numbers, and special characters).
+               - min size is 1 byte and maximum size is 4000 byte.
+               - Eg: s_name Varchar2(5);
+
+NVARCHAR(n/max) - It is used to store unicode or multilingual data.
+
+                -  The following shows the syntax of NVARCHAR: NVARCHAR(n)
+                   In this syntax, n defines the string length that ranges from 1 to 4,000. 
+                   If you don’t specify the string length, its default value is 1.
+
+                - NVARCHAR(max)
+                  In this syntax, max is the maximum storage size in bytes which is 2^31-1 bytes (2 GB).
+                  In general, the actual storage size in bytes of a NVARCHAR value is two times the number 
+                  of characters entered plus 2 bytes.
+
+number(p,s)/numeric (p,s) - p stands for precision- that is total number of digits
+                          - s stands for Scale- that is number of digits after the decimal point.
+                          - Eg; 53.215 --> number(5,3);
+
+date - internally every date is number
+     - date stores time as well, but is optional
+     - Example: Create table emp
+                (dob date);
+                insert into emp
+                values (to_date('1994 07 24' , ' YYYYmmdd');
+
+long - variable length, character data
+     - max size is 2 GB and it can have only one long column per table.
+
+
+CLOB - it is character long object
+     - It holds 4 GB data per column and you can use multiple CLOB columns per table.
+
+      

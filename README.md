@@ -22,7 +22,7 @@ Collection of DataBase and DBMS is called as DataBase System.
 
 
 
----------------------------------  STUCTURED QUERY LANGUAGE (SQL) -----------------------------------------
+---------------------------------  STUCTURED QUERY LANGUAGE (SQL) -----------------------------
 
 
 SQL commands are instructions. It is used to communicate with the database. It is also used to perform specific tasks, functions, and queries of data.

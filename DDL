@@ -1,0 +1,45 @@
+DDL is also known as data definition language.
+They are used to alter or modify a database or a table structure or scheme.
+These statements handle the design and storage of the database objects.
+
+
+1. CREATE
+
+It is used to create objects like table, views,index etc.
+SYNTAX :
+ create < obj> < obj.name> ( col.name datatype (size) , col.name datatype (size));
+EXAMPLE :
+ create table emp (e_name char(5) , e_id number(5));
+
+
+2. ALTER 
+
+It can be used to add , delete, or modify the structure of the table.
+It can be also used to add or draw constrain of the column.
+SYNTAX:
+Alter table tablename modify colname datatype;
+Alter table tablename add colname datatype;
+Alter table tablename delete colname datatype;
+
+3.DROP
+
+It is used to delete the entire structure of the table.
+SYNTAX:
+drop object objectname;
+EXAMPLE:
+drop table ABC;
+
+4. TRUNCATE
+It is used to remove all the rows from the table.
+It cannot be used with the where clause.
+SYNTAX:
+Truncate table tablename;
+
+5. RENAME
+It is used to rename the table name.
+SYNTAX:
+rename oldtablename to newname;
+
+
+
+ 

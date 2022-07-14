@@ -1,0 +1,31 @@
+WRITE QUERIES FOR THE GIVEN TABLE
+1. CREATE TABLE WORKER
+2. WRITE THE QUERY TO ADD GIVEN DATA INTO TABLES
+3. ADD COLUMN, DEPARTMENT_NO INTO TABLE
+4. CHANGE THE DATATYPE OF DEPARTMENT_NO COLUMN TO VARCHAR
+5. MONISHA AND VISHAL WORKING IN DEPARTMENT 10 CHANGE THE SIZE OF SALARY
+6. CHANGE SALARY COLUMN SIZE TO 10.
+7. INC. THE SALARY OF ALL THE EMPLOYS BY 5000 RS.
+8. DELETE ALL THE RECORDS WHOSE SALARY IS LESS THAN 50,000.
+
+
+---------------------------------------- ANSWERS ---------------------------------------------------
+
+
+1.Create table worker ( worker_id number(10) , first_name Varchar(10) , last_name Varchar(10), Salary number(10));
+ Select* from worker;
+2.Insert into worker values (001,'Monisha','Arora',100000);
+  Insert into worker values (002,'Niharika','Parmar',60000);
+  Insert into worker values (003,'Vishal','Singhal',300000);
+  Insert into worker values (004,'Amitabh','Singh',500000);
+  Insert into worker values (005,'Vivek','Patil',500000);
+  Insert into worker values (006,'Mitul','Deewan',200000);
+  Insert into worker values (007,'Satish','Kumar',75000);
+  Insert into worker values (008,'Geetika','Chauhan',90000);
+3. Alter table worker add department_no number(10);
+4. Alter table worker modify department_no Varchar(10);
+5. Alter table worker modify salary number(10) where (first_name='Monica' or first_name='Vishal');
+6.Alter table worker modify salary number(10);
+7.Update worker set salary = salary + 5000;
+8. Delete from worker where salary< 50000;
+

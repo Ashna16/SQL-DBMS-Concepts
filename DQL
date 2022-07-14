@@ -1,0 +1,11 @@
+Also known as data query language.
+
+It has only one function: select
+
+used to display table or particular columns from table
+
+If we want to display the entire table then the query will be:
+select* from tablename;
+
+If we want to display particular column from the table then the query will be:
+select* columnname from tablename;

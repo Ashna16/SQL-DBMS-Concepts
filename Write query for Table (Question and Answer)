@@ -1,0 +1,44 @@
+WRITE QUERY FOR THE FOLLOWING TABLES
+1. CREATE THE TABLE T1 ( EMPLOY_NO,E_NAME,SALARY,DESIGNATION)
+2. CREATE TABLE T2( EMPLOY_NO, DEPARTMENT_NO)
+3. ADD NEW COLUMN IN DEPARTMENT NO IN TABLE T1.
+4. UPDATE THE DEPARTMENT NUMBER as 10 WHERE E_NAME IS SAURABH AND EMPLOY_NO IS 139.
+5. UPDATE DEPARTMENT NO 20 WHERE DESIGNATION IS ASSISTANT AND SALARY IS 25,000.
+6. UPDATE THE DEPARTMENT NO 30 WHERE EMPLOY NAME IS MITESH AND GEETA.
+7. DISPLAY ALL THE DETAILS OF THE EMPLOYS WHOSE SALARY IS LESS THAN 10,000
+8. DISPLAY THE DEPARTMENT NO IN WHICH EMPLOY SITA IS WORKING.
+9. DROP THE COLUMN DEPARTMENT NO FROM TABLE T2.
+10. CHANGE DESIGNATION OF GEETA FROM MANAGER TO SR.MANAGER
+11. DROP THE TABLE T2
+12. DISPLAY EMPLOY NO AND SALARY FROM T1.
+13. ADD NEW COLUMN DEPARTMENT NAME IN TABLE T1.
+14. UPDATE THE DEPARTMENT NAME AS SERVICE DEPARTMENT.
+
+
+
+--------------------------------------------- ANSWERS ---------------------------------------------------------------
+
+1. Create table t1 ( employ_no number(10) , e_name char(10) , salary Varchar(10) , designation char(15));
+   Select * from t1;
+2. Create table t2 ( employ_no number(10), department_no number(10));
+   Select* from t2;
+3. Alter table t1 add department_no number(10);
+4. Insert into t1 (employ-no,e_name,salary,designation, department_no) values (101,'Saurabh', 15000 ,'Clerk' , 10);
+   Insert into t1 (employ-no,e_name,salary,designation, department_no) values (151,'Sita', 10000 ,'assistant' , 20);
+   Insert into t1 (employ-no,e_name,salary,designation, department_no) values (130,'mitesh', 9000 ,'Clerk' , 30);
+   Insert into t1 (employ-no,e_name,salary,designation, department_no) values (112,'Nisha', 25000 ,'Engineer' , 20);
+   Insert into t1 (employ-no,e_name,salary,designation, department_no) values (139,'Priya', 6500 ,'Housekeeper' , 10);
+   Insert into t1 (employ-no,e_name,salary,designation, department_no) values (121,'geeta', 40000 ,'Manager' , 30);
+5. Update t1 set department_no=10 where e_name= ' Saurabh' ;
+   Update t1 set department_no=10 where employ_no= 139 ;
+6. Update t1 set department_no=30 where e_name= ' mitesh' ;
+   Update t1 set department_no=30 where e_name= ' geeta' ;
+7. Select * from t1 where salary< 10,000;
+8. Select* from t1 where department_no where e_name='Sita';
+9. Drop t2 department_no;
+10. Update t1 set designation='sr. manager' where e_name= 'geeta';
+11. Drop table t2;
+12. Select* from t1 employ_no , salary;
+13. Alter table t1 add department_name varchar(10);
+14. Update t1 set department_name= servicename;
+Select* from t1;

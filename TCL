@@ -1,0 +1,24 @@
+Also known as Transaction Control Language.
+A transcation is a logical unit of work.All changes made to database can be refered as a transaction.
+The changes made to the transaction can be made permanent only if they are commited.
+
+1.COMMIT
+
+This command is used to end a transaction and also make its effects permanent to the database.
+Eg: Commit;
+
+2.SAVE POINT 
+
+This command,they mark at the particular stage of transaction.It is used with roll back to cancel the effects till particular
+save point.
+Eg: savepoint savepointid;
+
+3.ROLL-BACK
+Used to undo the work done in a current transaction.
+We can roll-back the entire transaction or till particular save-point.If save point is given then roll back will be done till the 
+particular savepoint.
+
+Eg: rollback work;
+    rollback; ( To rollback entire transaction)
+    rollback to savepoint savepointid; (to rollback till a particular savepoint)
+       

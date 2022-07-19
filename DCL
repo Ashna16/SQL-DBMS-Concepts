@@ -1,0 +1,21 @@
+Also know as Data Control Language
+As the name suggests:
+1. It helps provide the user to grant privilege (insert,select,update) to others to perform operations.
+2. Privileges can also be removed from particular user.
+
+
+A. GRANT- PRIVILEGE
+
+Here user-1 can grant privilege to user-2
+
+Syntax:
+Grant update,select,insert onemp to user-2;
+
+
+B.REVOKE
+
+Is a command used to remove,the granted privileges from the user.
+It is used to withdraw the privileges.
+
+Syntax:
+Revoke <privilege> on <objectname> from <username>;

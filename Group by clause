@@ -1,0 +1,7 @@
+It is used in collab with select statement to arrange identical data into groups.
+This group by clause follows the where clause in a select statement and precedes the order-by clause.
+It can be used in combination with aggregate function.
+
+Example:
+Select sname,sum(marks) from student group by sname;
+Select column1,column2 from tablename where <condition>  groupby column1,column2 order by  column1, column2;

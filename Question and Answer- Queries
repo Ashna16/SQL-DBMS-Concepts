@@ -1,0 +1,28 @@
+QUESTION
+
+1. CREATE A TABLE WITH EMP_NAME, STREET, CITY, DATE OF JOINING.
+2. MODIFY THE DATABASE,SO THAT EMPLOY AMRUTA NOW LIVES IN SURAT.
+3. THEN FIND THE NO. OF EMPLOYS WHOSE JOINING DATE IS 1st AUGUST 2017.
+4. ADD NEW COLUMN EMPLOY_ID IN THE TABLE.
+5. WRITE THE SQL QUERY TO DELETE ATTRIBUTE STREET.
+6. MAKE A TABLE CALLED EMP_BACKUP FROM EXISTING TABLE EMPLOY
+
+
+------------------------------------ ANSWERS -----------------------------------------------
+
+1. create table worker (emp_name varchar(10) , street varchar(10) , city varchar(10) , doj varchar(10));
+   insert into worker values ( 'Amruta' , 'XYX' , 'Vadodara' , '1/08/2017');
+   insert into worker values ( 'Nisha' , 'ABC' , 'Surat' , '1/01/2017');
+   insert into worker values ( 'paula' , 'XYX' , 'Ottawa' , '16/02/2017');
+   insert into worker values ( 'Derek' , 'XYX' , 'Pjill' , '1/08/2017');
+   select * from worker;
+
+2. update worker set city = 'surat' where emp_name = 'Amruta' ;
+
+3. select * from worker where doj = '1/08/2017' ;
+
+4. alter table worker add Employ_id number (10);
+
+5. delete from worker street ;
+
+6. Create table emp_backup as select* from worker;

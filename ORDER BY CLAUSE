@@ -1,0 +1,9 @@
+It is used to sort data in ascending or descending order.
+By default order will be in ascending order, we can use number of attributes in order by clause separated by comma.
+
+SYNTAX:
+
+Select columnlist from tablename where condition order by column1 column2 (asc or desc);
+
+EXAMPLE:
+Select * from employ order by e_name, salary desc;

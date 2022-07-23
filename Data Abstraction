@@ -1,0 +1,49 @@
+Data Abstraction is a process of hiding unwanted or irrelevant details from the end user. It provides a different view and 
+helps in achieving data independence which is used to enhance the security of data.
+
+The database systems consist of complicated data structures and relations. For users to access the data easily, 
+these complications are kept hidden, and only the relevant part of the database is made accessible to the users through data abstraction.
+
+Levels of abstraction for DBMS
+
+Database systems include complex data-structures. In terms of retrieval of data, reduce complexity in terms of usability of 
+users and in order to make the system efficient, developers use levels of abstraction that hide irrelevant details from the users. 
+Levels of abstraction simplify database design.
+
+Mainly there are three levels of abstraction for DBMS, which are as follows −
+
+Physical or Internal Level
+Logical or Conceptual Level
+View or External Level
+
+
+1. Physical or Internal Level
+
+It is the lowest level of abstraction for DBMS which defines how the data is actually stored, it defines data-structures 
+to store data and access methods used by the database. Actually, it is decided by developers or database application 
+programmers how to store the data in the database.
+
+So, overall, the entire database is described in this level that is physical or internal level. 
+It is a very complex level to understand. For example, customer's information is stored in tables and data is stored in the 
+form of blocks of storage such as bytes, gigabytes etc.
+
+2. Logical or Conceptual Level
+
+Logical level is the intermediate level or next higher level. 
+It describes what data is stored in the database and what relationship exists among those data.
+It tries to describe the entire or whole data because it describes what tables to be created and what are the links among 
+those tables that are created.
+
+It is less complex than the physical level. Logical level is used by developers or database administrators (DBA). 
+So, overall, the logical level contains tables (fields and attributes) and relationships among table attributes.
+
+3. View or External Level
+
+
+It is the highest level. In view level, there are different levels of views and every view only defines a part of the entire data.
+It also simplifies interaction with the user and it provides many views or multiple views of the same database.
+
+View level can be used by all users (all levels' users). This level is the least complex and easy to understand.
+
+For example, a user can interact with a system using GUI that is view level and can enter details at GUI or 
+screen and the user does not know how data is stored and what data is stored, this detail is hidden from the user.

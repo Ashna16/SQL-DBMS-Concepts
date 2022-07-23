@@ -9,4 +9,7 @@ QUESTION
 
 ---------------------------------- ANSWERS ---------------------------------------------
 
-1. 
+1. Select Sum (salary) from employ;
+2. Select Avg (salary) from employ where department no = 20;
+3. Select Depno, max(salary) as MaxSalary, min(Salary) as MinSalary from table1 group by Depno;
+4. Select max (slary) from employ where salary < (select max (salary) from emp);

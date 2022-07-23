@@ -1,0 +1,29 @@
+These are used to aggregate data of many records into a single record.This Function are mainly used with the group by clause or
+where clause.
+
+
+1. Sum{}
+It totals numerical values of given attribute.
+
+Example: Select sum (salary) from employ;
+
+2.Avg{}
+It is used to calculate average of the numerical values of the given attribute.
+
+Syntax:
+select Avg(salary) from employ;
+
+3. Max{}
+It returns the highest value of the given attribute.
+
+4. Min{}
+It returns the lowest value of the given attribute.
+Eg: select min (salary) from employ;
+
+5. Count{}
+It returns the total number of not null values fro the given attribute.
+
+6. Count{*}
+The COUNT(*) function counts the total rows in the table, including the NULL values.
+
+

@@ -1,0 +1,31 @@
+QUESTIONS ( For this question, please consider that a table named books is already created with the required fields)
+
+1. Display all book titles with author and price.
+2. Display the titles of book having price>300.
+3. Add new column year to the book table.
+4. Display books published in year 2000.
+5. Select tuples for all books whose publishing year is 2005 or price>500.
+6. Select tuples for all books whose author is 'Korth' and year is 2009.
+7. Display the details of all books whose price is third highest
+8. Display the book with the lowestprice.
+9. Display the min and the max price of the book authorwise.
+10. Write the query to change and display the author column name book_id as book_number.
+11. Display the books which are not published in the year 2010.
+
+
+
+------------------------------------- ANSWERS ----------------------------------
+
+1. Select book_title, author, price FROM books;
+2. Select book_title FROM books where price>300;
+3. Alter table books add Year number (5);
+4. Select book_name  FROM books WHERE Year = 2000;
+5. Select * from books where year = 2005 OR price > 500;
+6. Select * from books where author = 'korth' AND year = 2009;
+7. Select max (price) from books where price < (select max(price) from books) where price< (select max(price) from books);
+8. Select * from book where price = (select min(price) from books);
+9. Select min(price) from books where group by author;
+   Select max(price) from books where group by author;
+10. ALTER TABLE books RENAME COLUMN book_id TO book_number;
+    Select author from books;
+11. Select book_name from books where Year <> 2010.

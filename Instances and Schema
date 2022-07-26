@@ -1,0 +1,23 @@
+INSTANCES: The collection of information stored in the datbase at a particular moment is c/a instance.
+           The value of the variable declared in the program are corresponding to the instance.
+
+
+
+SCHEMA: Database are used to store the data or information.The content of the databse gets changed as the data or 
+        information may be added or deleted from it.
+        Overall design of the databse is known as schema.The database schema are partitioned at different level of abstraction.
+        It is related with the variable which are declared in the program.It doesnot get changed frequently.
+
+
+1. PHYSICAL SCHEMA:
+
+The schema designed on the physical level is c/a physical schema.It is below the logical level and can be easily changed without affecting
+the application program.
+
+2.LOGICAL SCHEMA :
+The schema designed at logical level is known as logical schema.It is very important as it directly affects the apllication program.
+This is because the programs are constructed based on logical schema,so if that changes then it also affects the application program.
+
+
+3. SUB SCHEMA:
+The schema designed at view level are called the Sub-Schema.        

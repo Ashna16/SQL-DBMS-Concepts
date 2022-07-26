@@ -1,0 +1,20 @@
+The ability to modify schema definition in one level without affecting the schema definition in higher level is called 
+as DATA INDEPENDENCE.
+In simple words,it is the technique that allows the data to be changed without affecting the applications that process it.
+
+There are two types of Data Independence:
+1. Physical data independence
+2. Logical data independence
+
+
+1. PHYSICAL DATA INDEPENDENCE
+
+The ability to modify the physical schema w/o causing the application programs to be re-written.
+Modification at this level are usually to improve performance of database.
+
+
+2. LOGICAL DATA INDEPENDENCE
+
+The ability to modify the conceptual schema w/o causing application program to be returned usually done when logical structure of database
+is altered.Logical data independence are hard to achieve as the application program are highly dependent on logical structure of the data.
+

@@ -1,0 +1,14 @@
+The Logical Data Model is used to define the structure of data elements and to set relationships between them. 
+The logical data model adds further information to the conceptual data model elements. 
+The advantage of using a Logical data model is to provide a foundation to form the base for the Physical model. 
+However, the modeling structure remains generic.
+
+At this Data Modeling level, no primary or secondary key is defined. 
+At this Data modeling level, you need to verify and adjust the connector details that were set earlier for relationships.
+
+Characteristics of a Logical data model
+
+Describes data needs for a single project but could integrate with other logical data models based on the scope of the project.
+Designed and developed independently from the DBMS.
+Data attributes will have datatypes with exact precisions and length.
+Normalization processes to the model is applied typically till 3NF.

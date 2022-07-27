@@ -1,0 +1,14 @@
+A Physical Data Model describes a database-specific implementation of the data model. 
+It offers database abstraction and helps generate the schema. This is because of the richness of meta-data offered by a Physical Data Model. 
+The physical data model also helps in visualizing database structure by replicating database column keys, constraints, indexes, triggers,
+and other RDBMS features.
+
+
+Characteristics of a physical data model:
+
+1. The physical data model describes data need for a single project or application though it maybe integrated with other physical 
+data models based on project scope.
+2. Data Model contains relationships between tables that which addresses cardinality and nullability of the relationships.
+3. Developed for a specific version of a DBMS, location, data storage or technology to be used in the project.
+4. Columns should have exact datatypes, lengths assigned and default values.
+5. Primary and Foreign keys, views, indexes, access profiles, and authorizations, etc. are defined.

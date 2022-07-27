@@ -1,1 +1,27 @@
+The Data Model is defined as an abstract model that organizes data description, data semantics, and consistency constraints of data. 
+The data model emphasizes on what data is needed and how it should be organized instead of what operations will be performed on data.
+Data Model is like an architect’s building plan, which helps to build conceptual models and set a relationship between data items.
+
+The two types of Data Modeling Techniques are
+
+Entity Relationship (E-R) Model
+UML (Unified Modelling Language)
+
+Types of Data Models
+Types of Data Models: There are mainly three different types of data models: conceptual data models, logical data models, and physical
+data models, and each one has a specific purpose. The data models are used to represent the data and how it is stored 
+in the database and to set the relationship between data items.
+
+Conceptual Data Model: This Data Model defines WHAT the system contains. 
+This model is typically created by Business stakeholders and Data Architects. 
+The purpose is to organize, scope and define business concepts and rules.
+
+Logical Data Model: Defines HOW the system should be implemented regardless of the DBMS. 
+This model is typically created by Data Architects and Business Analysts. The purpose is to developed technical map of rules 
+and data structures.
+
+Physical Data Model: This Data Model describes HOW the system will be implemented using a specific DBMS system. 
+This model is typically created by DBA and developers. The purpose is actual implementation of the database.
+
+
 

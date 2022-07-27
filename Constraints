@@ -1,0 +1,54 @@
+- Constraints are used to operate database related operations according to certain rules.
+
+- Integrity is the mechanism used to avoid the invalid data entry in the database.
+It is of three types:
+
+1. Domain Integrity: 
+
+Here we check if the value entered in the rows is from the given range or not.
+
+Which consists of:
+
+- NOT NULL:
+It is used to avoid absence of values in a row or a column.User cannot keep a not null value empty.
+
+Eg:
+Create table emp (ename char(5) NOT NULL , eid number(10));
+Alter table emp modify eid number (10) NOT NULL;
+
+-CHECK :
+Use to avoid entering unnecessary values to columns.
+
+Eg:
+Create table stu (sname char(50 , marks number (3) check (marks<=100));
+
+-DEFAULT
+If no value is entered by default a default value will be put in that column.
+Eg:
+Create table stu (s_name char(5) , dept Varchar(5) default 'CSE');
+
+2. Entity Integrity Constraints:
+
+Defines constraints on tables, each row in the table can be identified by integrity constraint.
+
+- Unique Constraints:
+1. Avoids duplication of rows.
+2. The duplication of values creates problems.
+
+ EG:
+ Create table stu (roll number (5) unique);
+
+- Primary key constraints
+1.Enforces two constraints,there should not be any duplication of value and value should not be null.
+2. There can be number of unique key but one table can have only primary key.
+
+Eg:Create table xyz (roll_no number(5) primary key);
+
+3. Referential Constraint:
+
+- Foreign key 
+1. If there exists foreign key in one table then there has to be a primary key in another table.
+2. It is used to set lin between two tables.
+
+Eg: Create table tablename (colname datatype , colname datatype constraint name foreign key (this table's colname) references other-tablename (other table column));
+

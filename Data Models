@@ -25,3 +25,21 @@ This model is typically created by DBA and developers. The purpose is actual imp
 
 
 
+Advantages and Disadvantages of Data Model:
+
+Advantages of Data model:
+
+The main goal of a designing data model is to make certain that data objects offered by the functional team are represented accurately.
+The data model should be detailed enough to be used for building the physical database.
+The information in the data model can be used for defining the relationship between tables, primary and foreign keys, and stored procedures.
+Data Model helps business to communicate the within and across organizations.
+Data model helps to documents data mappings in ETL process
+Help to recognize correct sources of data to populate the model.
+
+
+Disadvantages of Data model:
+
+To develop Data model one should know physical data stored characteristics.
+This is a navigational system produces complex application development, management. Thus, it requires a knowledge of the biographical truth.
+Even smaller change made in structure require modification in the entire application.
+There is no set data manipulation language in DBMS.

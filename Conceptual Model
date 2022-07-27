@@ -16,3 +16,12 @@ Data model example:
 Customer and Product are two entities. Customer number and name are attributes of the Customer entity
 Product name and price are attributes of product entity
 Sale is the relationship between the customer and product
+
+
+Characteristics of a conceptual data model
+
+Offers Organisation-wide coverage of the business concepts.
+This type of Data Models are designed and developed for a business audience.
+The conceptual model is developed independently of hardware specifications like data storage capacity, location or software specifications 
+like DBMS vendor and technology. The focus is to represent data as a user will see it in the “real world.”
+Conceptual data models known as Domain models create a common vocabulary for all stakeholders by establishing basic concepts and scope.

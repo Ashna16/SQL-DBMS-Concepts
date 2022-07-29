@@ -1,0 +1,15 @@
+It performs binary union between two given relations and is defined as 
+
+Notation − r U s
+
+Where r and s are either database relations or relation result set (temporary relation).
+
+For a union operation to be valid, the following conditions must hold −
+
+r, and s must have the same number of attributes.
+Attribute domains must be compatible.
+Duplicate tuples are automatically eliminated.
+
+Example:
+Output − Projects the names of the authors who have either written a book or an article or both.
+∏ author (Books) ∪ ∏ author (Articles)

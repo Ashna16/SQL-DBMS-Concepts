@@ -1,0 +1,31 @@
+Relational Model (RM) represents the database as a collection of relations.
+A relation is nothing but a table of values. Every row in the table represents a collection of related data values. 
+These rows in the table denote a real-world entity or relationship.
+
+The table name and column names are helpful to interpret the meaning of values in each row. 
+The data are represented as a set of relations. In the relational model, data are stored as tables. 
+However, the physical storage of the data is independent of the way the data are logically organized.
+
+
+Relational Model Concepts in DBMS
+
+Attribute: Each column in a Table. Attributes are the properties which define a relation. e.g., Student_Rollno, NAME,etc.
+
+Tables – In the Relational model the, relations are saved in the table format. It is stored along with its entities. 
+A table has two properties rows and columns. Rows represent records and columns represent attributes.
+
+Tuple – It is nothing but a single row of a table, which contains a single record.
+
+Relation Schema: A relation schema represents the name of the relation with its attributes.
+
+Degree: The total number of attributes which in the relation is called the degree of the relation.
+
+Cardinality: Total number of rows present in the Table.
+
+Column: The column represents the set of values for a specific attribute.
+
+Relation instance – Relation instance is a finite set of tuples in the RDBMS system. Relation instances never have duplicate tuples.
+
+Relation key – Every row has one, two or multiple attributes, which is called relation key.
+
+Attribute domain – Every attribute has some pre-defined value and scope which is known as attribute domain

@@ -1,0 +1,19 @@
+Consider that a table is been already created. Write SQL queries for the following:
+
+1. To display annual salary of all employs.
+2. To display salary for all employs whos salary is not less than 5000 and not greater than 10,000.
+3. To display the average salary for each department.
+4. To display employ name and department no of all employs in department 10 & 30.
+5. Write query to display no. of people in the same job.
+6. Write a query to display employ name and join date for all employs in the same department as Prashant Patil.
+
+
+
+------------------------------------- ANSWERS -------------------------------------------
+
+1. Select * from table annual salary;
+2. Select * from table where salary > 5000 or salary <10,000;
+3. Select avg (salary) from table group by department;
+4. Select e_name, dept_no from table where dept_no=30 or dept_no=10;
+5. Select sum(e_name) from table group by job;
+6. Select e_name, join_date from table where dept (Select dept from emp where ename='Prashant Patil');

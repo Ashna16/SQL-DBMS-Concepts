@@ -1,0 +1,13 @@
+It projects column(s) that satisfy a given predicate.
+
+Notation − ∏A1, A2, An (r)
+
+Where A1, A2 , An are attribute names of relation r.
+
+Duplicate rows are automatically eliminated, as relation is a set.
+
+Example:
+
+Selects and projects columns named as subject and author from the relation Books.
+∏subject, author (Books)
+

@@ -1,0 +1,11 @@
+The result of set difference operation is tuples, which are present in one relation but are not in the second relation.
+
+Notation − r − s
+
+Finds all the tuples that are present in r but not in s.
+
+Example:
+
+Output − Provides the name of authors who have written books but not articles.
+
+∏ author (Books) − ∏ author (Articles)

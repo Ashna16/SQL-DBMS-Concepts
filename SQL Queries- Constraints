@@ -1,0 +1,17 @@
+Create table:
+
+1.table emp (Primary KEY - eno, ename , project no (FOREIGN KEY) , Hours work)
+2. table 2 project table( project number (Primary key) , project name)
+3. Apply unique constraint for project name at design.
+4.Add default value 8 for number of hours work.
+5. The project number should be between 1 to 10.
+
+------------------------------------------ ANSWERS --------------------------------------
+
+
+
+Create table project (project_no number (3) primary key , project_name Varchar(10) unique);
+
+Create table emp (e_no number (5) primary key, e_name Varchar(10) , work_hour number(3) default '8' , pro_no number 2 check (project_no > 1 And project_no < 10)
+constraint  Fk_pid foreign key (pro_no) references project (project_no);
+

@@ -1,0 +1,13 @@
+Rename Operation (ρ)
+The results of relational algebra are also relations but without any name. 
+The rename operation allows us to rename the output relation. 'rename' operation is denoted with small Greek letter rho ρ.
+
+Eg: Notation − ρ x (E)
+
+Where the result of expression E is saved with name of x.
+
+Additional operations are −
+
+Set intersection
+Assignment
+Natural join

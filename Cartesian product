@@ -1,1 +1,11 @@
+Combines information of two different relations into one.
 
+Notation − r Χ s
+
+Where r and s are relations and their output will be defined as −
+
+r Χ s = { q t | q ∈ r and t ∈ s}
+
+Eg: Yields a relation, which shows all the books and articles written by Ashna-16.
+
+σauthor = 'Ashna-16'(Books Χ Articles)

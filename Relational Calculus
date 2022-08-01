@@ -1,0 +1,43 @@
+In contrast to Relational Algebra, Relational Calculus is a non-procedural query language, that is, it tells what to do but 
+never explains how to do it.
+
+Relational calculus exists in two forms −
+
+1. Tuple Relational Calculus (TRC)
+
+Filtering variable ranges over tuples
+
+Notation − {T | Condition}
+
+Returns all tuples T that satisfies a condition.
+
+Eg:
+Output − Returns tuples with 'name' from Author who has written article on 'database'.
+{ T.name | Author(T) AND T.article = 'database' }
+
+TRC can be quantified. We can use Existential (∃) and Universal Quantifiers (∀).
+
+For example −
+
+{ R| ∃T   ∈ Authors(T.article='database' AND R.name=T.name)} 
+Output − The above query will yield the same result as the previous one.
+
+2. Domain Relational Calculus (DRC)
+
+In DRC, the filtering variable uses the domain of attributes instead of entire tuple values (as done in TRC, mentioned above).
+
+Notation −
+
+{ a1, a2, a3, ..., an | P (a1, a2, a3, ... ,an)}
+
+Where a1, a2 are attributes and P stands for formulae built by inner attributes.
+
+For example −
+
+{< article, page, subject > | ∈ Ashna-16 ∧ subject = 'database'} 
+Output − Yields Article, Page, and Subject from the relation Ashna-16, where subject is database.
+
+Just like TRC, DRC can also be written using existential and universal quantifiers. DRC also involves relational operators.
+
+The expression power of Tuple Relation Calculus and Domain Relation Calculus is equivalent to Relational Algebra.
+

@@ -1,0 +1,23 @@
+It is an additional operation denoted by ÷.
+
+When ÷ is used it divides the first relation by second relation,thereby eliminating similar attributes (columns) and giving 
+the attributes which are present in first relation but not in second relation.
+
+Example:
+
+
+E1                                               E2
+ename  dname                                    dname      city
+Nisha  Sales                                    Accounts     X
+PRIYA  Purchase                                 Sales        Y
+       IT                                       Purchase     Z
+                                                IT           M
+                                                
+Query:
+
+π ename,dname(E1) ÷ π dname,city(E2)
+
+Output:
+ename
+Nisha
+Priya

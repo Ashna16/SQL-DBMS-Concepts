@@ -1,0 +1,29 @@
+NATURAL JOIN (⋈)
+
+Natural join can only be performed if there is a common attribute (column) between the relations. 
+The name and type of the attribute must be same.
+
+Example
+
+Consider the following two tables
+
+C
+
+Num	         Square
+2            	4
+3	            9
+
+D
+
+Num	         Cube
+2	            8
+3            	27
+
+Query: C ⋈ D
+
+Output:
+C ⋈ D
+
+Num	        Square	          Cube
+2	           4	               8
+3	           9	               27

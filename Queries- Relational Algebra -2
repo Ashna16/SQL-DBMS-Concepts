@@ -1,0 +1,15 @@
+Consider thr student relation structure as follows :
+Rollno , name, dob, add , city , class ,avg
+
+1. Write down query the query for details of students securing avg in the range of 50-65.
+2. Get the list of students from CSE.
+3. Display th rollno and name of students whose city is X.
+
+
+ANSWERS:
+
+1. Select * from student where avg> 50 AND avg <65;
+2. Select * from student where class = CSE;
+3. Select rollno, name from CSE where city = 'X';
+            OR
+   π rollno,name(σ (city= 'X')) ^students

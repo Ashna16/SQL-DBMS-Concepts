@@ -1,0 +1,32 @@
+
+
+
+Operation(Symbols)	                                      Purpose
+
+Select(σ)	                      The SELECT operation is used for selecting a subset of the tuples according to a given selection condition
+
+Projection(π)                  	The projection eliminates all attributes of the input relation but those mentioned in the projection list.
+
+Union Operation(∪)	            UNION is symbolized by symbol. It includes all tuples that are in tables A or in B.
+
+Set Difference(-)	              Symbol denotes it. The result of A – B, is a relation which includes all tuples that are in A but not in B.
+
+Intersection(∩)	                Intersection defines a relation consisting of a set of all tuple that are in both A and B.
+
+Cartesian Product(X)	          Cartesian operation is helpful to merge columns from two relations.
+
+Inner Join	                    Inner join, includes only those tuples that satisfy the matching criteria.
+
+Theta Join(θ)	                  The general case of JOIN operation is called a Theta join. It is denoted by symbol θ.
+
+EQUI Join                     	When a theta join uses only equivalence condition, it becomes a equi join.
+
+Natural Join(⋈)               	Natural join can only be performed if there is a common attribute (column) between the relations.
+
+Outer Join	                    In an outer join, along with tuples that satisfy the matching criteria.
+
+Left Outer Join( )	            In the left outer join, operation allows keeping all tuple in the left relation.
+
+Right Outer join()	            In the right outer join, operation allows keeping all tuple in the right relation.
+
+Full Outer Join()	              In a full outer join, all tuples from both relations are included in the result irrespective of the matching condition.

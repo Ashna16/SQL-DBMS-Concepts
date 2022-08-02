@@ -1,0 +1,20 @@
+An intersection is defined by the symbol ∩
+
+A ∩ B
+
+Defines a relation consisting of a set of all tuple that are in both A and B. However, A and B must be union-compatible.
+
+
+Example:
+
+E1                   E2
+ename               ename
+Nisha               Akansha
+Priya               Tiya
+                    Priya
+
+
+Query: π ename (E1)  ∩ π ename (E2)
+
+Output: 
+Priya

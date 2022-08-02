@@ -1,2 +1,11 @@
 
-Consider the following realtional
+Consider the following tables and write queries for the same:
+
+1. Employee - eno,depno , desig , salary , ename , 
+2. Department - deptno , deptname 
+3. Project : projectno , projectname , startdate
+4. Work: Workrelation , emp_no , deptno , projectno , noofhours.
+
+ANSWERS:
+
+

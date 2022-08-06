@@ -1,0 +1,20 @@
+
+The aggregate function simply refers to the calculations performed on a data set to get a single number that accurately represents 
+the underlying data. The use of computers has improved how these calculations are performed, allowing aggregate functions to produce 
+results very quickly and even adjust weightings based on the confidence the user has in the data.
+
+Some common aggregate functions include:
+
+Average (also called arithmetic mean)
+Count
+Maximum
+Minimum
+Range
+NaNmean (the mean ignoring NaN values, also known as "nil" or "null")
+Median
+Mode
+Sum
+
+The symbol used to denote the aggregate function is G.
+G sum (salary).
+

@@ -1,0 +1,22 @@
+1. It allows you to write the arithmetic function while writing you an expression.
+
+2. The GENERALIZED PROJECTION operation is an extension to the PROJECTION operation.
+In this case, arithmetic functions can be used in the projection list on certain attributes. The Generalized Projection has the form :
+
+ΠF1, F2, ….. , Fn ( E )
+
+Where E is a Relation Algebra Expression
+
+F1, F2, F3…….Fn is an arithmetic expression.
+
+For example :
+
+How many more students can be there in a batch?
+
+ΠBatchName, maxlimit – currentcount (Students)
+
+Example-2:
+
+Π slary*12 ^ (Emp)
+
+

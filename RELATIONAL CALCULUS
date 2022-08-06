@@ -1,0 +1,44 @@
+Before understanding Relational calculus in DBMS, we need to understand Procedural Language and Declarative Langauge.
+
+Procedural Language - Those Languages which clearly define how to get the required results from the Database are called Procedural Language. 
+Relational algebra is a Procedural Language.
+
+Declarative Language - Those Language that only cares about What to get from the database without getting into how to get the results 
+are called Declarative Language. Relational Calculus is a Declarative Language.
+
+So Relational Calculus is a Declarative Language that uses Predicate Logic or First-Order Logic to determine the results from Database.
+
+Types of Relational Calculus in DBMS
+
+Relational Calculus is of Two Types:
+Tuple Relational Calculus (TRC)
+Domain Relational Calculus (DRC)
+
+
+Tuple Relational Calculus (TRC)
+
+Tuple Relational Calculus in DBMS uses a tuple variable (t) that goes to each row of the table and checks if the predicate is true or false 
+for the given row. Depending on the given predicate condition, it returns the row or part of the row.
+The Tuple Relational Calculus expression Syntax is
+{t \| P(t)}   
+
+Example: *** Consider a table already made ***
+
+Q. Write a TRC query to get all the data of customers whose zip code is 12345.
+
+A. TRC Query: {t \| t ∈ Customer ∧ t.Zipcode = 12345} 
+
+Domain Relational Calculus (DRC)
+
+Domain Relational Calculus uses domain Variables to get the column values required from the database based on the predicate expression
+or condition.
+The Domain realtional calculus expression syntax:
+{<x1,x2,x3,x4...> \| P(x1,x2,x3,x4...)} 
+where,
+<x1,x2,x3,x4...> are domain variables used to get the column values required, and P(x1,x2,x3...) is predicate expression or condition.
+
+Example: *** Consider a table already made ***
+
+Example 1: Write a DRC query to get the data of all customers with Zip code 12345.
+DRC query: {<x1,x2,x3> \| <x1,x2> ∈ Customer ∧ x3 = 12345 }
+

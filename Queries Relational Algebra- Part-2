@@ -6,6 +6,28 @@ Consider the following tables and write queries for the same:
 3. Project : projectno , projectname , startdate
 4. Work: Workrelation , emp_no , deptno , projectno , noofhours.
 
-ANSWERS:
+--------------------------------------------------------------------------------------
 
+Q. TO GET THE DATA OF PROJECTS STARTED ON 1 AUG 2018.
+
+A. Select * from project where startdate = ' 1 Aug 2018';
+                     OR
+    σ ( startdate = '1 Aug 2018')^ (project)
+
+
+
+Q. DISPLAY THE LIST OF EMPNO FROM DEPTNO 10, WORKING ON PROJECT NO 1.
+
+A. Select empno from work where deptno=10 AND projectno=1;
+                       OR
+   π empno( σ (dept no=10 ^ projectno=1)) ^ (work)
+   
+Q. LIST EMPLOY NAMES OF THOSE EMPLOYS WHO HAVE WORKED FOR MIN 20 HOURS, ON THEIR PROJECT.
+
+A. π ename σ (noofhours >= 20 ^ emp.empno = work.eno)^ (emp X work)
+
+Q.GET THE EMPLOY NAME & SALARY OF THOSE WHO ARE FROM DEPARTMENT.NO =10 AND 20.
+
+A.Select empname,salary from employee where deptno=10 and deptno=20;
+                             OR
 

@@ -1,0 +1,19 @@
+
+CONSIDER A TABLE ALREADY CREATED, WRITE QUERIES ACCORDINGLY
+
+Q. LIST ALL EMP NAMES, THEIR JOBS SALARY IN ASCENDING ORDER BY THEIR JOBS.
+
+A. Select empnames,job,salary from table order by jobs;
+
+Q. LIST ALL EMP NAME AND SALARY WHERE SALARY IS LESS THAN THAT OF ALL MANAGERS.
+
+A. Select ename,sal from table where sal< (select sal from table where job= ' Manager' );
+
+Q. LIST OF ALL EMPLOY ALONG W/ THEIR MONTHLY AND ANNUAL INCOME.
+
+A. Select enam,sal,sal*12 from table;
+
+Q. DISPLAY NAMES OF ALL EMP WHOSE COMISSION IS GREATER THAN SALARY.
+
+A. Select * from table where comm > salary;
+

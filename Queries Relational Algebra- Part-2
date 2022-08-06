@@ -31,3 +31,4 @@ Q.GET THE EMPLOY NAME & SALARY OF THOSE WHO ARE FROM DEPARTMENT.NO =10 AND 20.
 A.Select empname,salary from employee where deptno=10 and deptno=20;
                              OR
 
+  ∏ ename,salary(deptno=10 ^ (emp) deptno =20);

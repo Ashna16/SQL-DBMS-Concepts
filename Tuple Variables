@@ -1,0 +1,12 @@
+Tuples are used to store multiple items in a single variable. 
+
+There are two types of variables:
+1. Free tuple variables
+2. Bound tuple variable
+
+
+1. Free tuple variable:
+These variables are not qualified by there exists and for all.
+
+2. Bound tuple variable:
+This is qualified by some predicate or there exists or for all.

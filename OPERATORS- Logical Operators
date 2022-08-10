@@ -1,1 +1,93 @@
+SQL logical operators are used to test for the truth of the condition.
+A logical operator like the Comparison operator returns a boolean value of TRUE, FALSE, or UNKNOWN
 
+
+SQL Logical Operators
+
+Operator	  Description	
+
+ALL      	TRUE if all of the subquery values meet the condition	
+
+AND	      TRUE if all the conditions separated by AND is TRUE	
+
+ANY	      TRUE if any of the subquery values meet the condition	
+
+BETWEEN	  TRUE if the operand is within the range of comparisons	
+
+EXISTS	  TRUE if the subquery returns one or more records	
+
+IN	      TRUE if the operand is equal to one of a list of expressions	
+
+LIKE	    TRUE if the operand matches a pattern	
+
+NOT	      Displays a record if the condition(s) is NOT TRUE	
+
+OR	      TRUE if any of the conditions separated by OR is TRUE	
+
+SOME	    TRUE if any of the subquery values meet the condition	
+
+
+AND Operator
+
+Query : 
+
+SELECT * FROM employee WHERE emp_city = 'Allahabad' AND emp_country = 'India';
+
+IN Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_city IN ('Allahabad', 'Patna');
+
+NOT Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_city NOT LIKE 'A%';
+
+OR Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_city = 'Varanasi' OR emp_country = 'India';
+
+LIKE Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_city LIKE 'P%';
+
+BETWEEN Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_id BETWEEN 101 AND 104;
+
+ALL Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_id = ALL 
+                (SELECT emp_id FROM employe
+                
+ANY Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_id = ANY
+                (SELECT emp_id FROM employee WHERE emp_city = 'Varanasi');
+                
+ EXISTS Operator
+
+Query:
+
+SELECT emp_name FROM employee WHERE EXISTS
+                (SELECT emp_id FROM employee WHERE emp_city = 'Patna');
+                
+                
+SOME Operator
+
+Query:
+
+SELECT * FROM employee WHERE emp_id < SOME 
+                (SELECT emp_id FROM employee WHERE emp_city = 'Patna');

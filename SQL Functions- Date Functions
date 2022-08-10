@@ -1,0 +1,112 @@
+In MySql the default date functions are:
+
+NOW(): Returns the current date and time. Example:
+SELECT NOW();
+
+Output:
+2017-01-13 08:03:52
+
+CURDATE(): Returns the current date. Example:
+
+SELECT CURDATE();
+
+Output:
+2017-01-13
+
+CURTIME(): Returns the current time. Example:
+
+SELECT CURTIME();
+
+Output:
+08:05:15
+
+DATE(): Extracts the date part of a date or date/time expression. Example:
+For the below table named ‘Test’
+Id	Name	BirthTime
+4120	Pratik	1996-09-26 16:44:15.581
+
+SELECT Name, DATE(BirthTime) AS BirthDate FROM Test;
+
+Output:
+Name	BirthDate
+Pratik	1996-09-26
+
+EXTRACT(): Returns a single part of a date/time. Syntax:
+EXTRACT(unit FROM date);
+There are several units that can be considered but only some are used such as:
+MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, etc.
+And ‘date’ is a valid date expression.
+
+Example:
+For the below table named ‘Test’
+
+Id	Name	BirthTime
+4120	Pratik	1996-09-26 16:44:15.581
+
+Queries
+
+SELECT Name, Extract(DAY FROM BirthTime) AS BirthDay FROM Test;
+
+Output:
+Name	BirthDay
+Pratik	26
+SELECT Name, Extract(YEAR FROM BirthTime) AS BirthYear FROM Test;
+
+Output:
+Name	BirthYear
+Pratik	1996
+SELECT Name, Extract(SECOND FROM BirthTime) AS BirthSecond FROM Test;
+
+Output:
+Name	BirthSecond
+Pratik	581
+
+DATE_ADD() : Adds a specified time interval to a date
+Syntax:
+DATE_ADD(date, INTERVAL expr type);
+Where,  date – valid date expression and expr is the number of interval we want to add.
+and type can be one of the following:
+MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, etc.
+
+Example:
+For the below table named ‘Test’
+
+Id	Name	BirthTime
+4120	Pratik	1996-09-26 16:44:15.581
+
+Queries
+
+SELECT Name, DATE_ADD(BirthTime, INTERVAL 1 YEAR) AS BirthTimeModified FROM Test;
+Output:
+
+Name	BirthTimeModified
+Pratik	1997-09-26 16:44:15.581
+SELECT Name, DATE_ADD(BirthTime, INTERVAL 30 DAY) AS BirthDayModified FROM Test;
+Output:
+
+Name	BirthDayModified
+Pratik	1996-10-26 16:44:15.581
+SELECT Name, DATE_ADD(BirthTime, INTERVAL 4 HOUR) AS BirthHourModified FROM Test;
+Output:
+
+Name	BirthSecond
+Pratik	1996-10-26 20:44:15.581
+
+DATE_SUB(): Subtracts a specified time interval from a date.
+Syntax for DATE_SUB is same as DATE_ADD just the difference is that DATE_SUB is used to subtract a given interval of date.
+
+DATEDIFF(): Returns the number of days between two dates.
+Syntax:
+DATEDIFF(date1, date2);
+date1 & date2- date/time expression
+
+Example:
+
+SELECT DATEDIFF('2017-01-13','2017-01-03') AS DateDiff;
+
+Output:
+
+DateDiff
+10
+DATE_FORMAT(): Displays date/time data in different formats.Syntax:
+DATE_FORMAT(date,format);

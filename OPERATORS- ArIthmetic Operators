@@ -1,1 +1,86 @@
 
+We can use various Arithmetic Operators on the data stored in the tables.
+
+Arithmetic Operators are:
+
++           [Addition]
+-           [Subtraction]
+/           [Division]
+*           [Multiplication]
+%           [Modulus]
+
+
+Addition (+) :
+It is used to perform addition operation on the data items, items include either single column or multiple columns.
+
+Implementation:
+
+SELECT employee_id, employee_name, salary, salary + 100
+   AS "salary + 100" FROM addition;
+
+Here we have done addition of 100 to each Employee’s salary i.e, addition operation on single column.
+
+Let’s perform addition of 2 columns:
+
+SELECT employee_id, employee_name, salary, salary + employee_id
+   AS "salary + employee_id" FROM addition;
+
+Subtraction (-) :
+It is use to perform subtraction operation on the data items, items include either single column or multiple columns.
+
+Implementation:
+
+SELECT employee_id, employee_name, salary, salary - 100
+    AS "salary - 100" FROM subtraction;
+    
+   
+Multiplication (*) :
+    
+It is use to perform multiplication of data items.
+
+Implementation:
+
+SELECT employee_id, employee_name, salary, salary * 100
+    AS "salary * 100" FROM addition;
+    
+Modulus ( % ) :
+
+It is use to get remainder when one data is divided by another.
+
+Implementation:
+
+SELECT employee_id, employee_name, salary, salary % 25000
+    AS "salary % 25000" FROM addition;
+    
+    
+Division
+
+is typically required when you want to find out entities that are interacting with all entities of a set of different type entities.
+The division operator is used when we have to evaluate queries which contain the keyword ‘all’.
+
+Some instances where division operator is used are:
+
+Which person has account in all the banks of a particular city?
+Which students have taken all the courses required to graduate?
+In all these queries, the description after the keyword ‘all’ defines a set which contains some elements and the final result contains those units who satisfy these requirements.
+
+Important: Division is not supported by SQL implementations. However, it can be represented using other operations.(like cross join, Except, In )
+
+SQL Implementation of Division
+
+Given two relations(tables): R(x,y) , S(y).
+R and S : tables
+x and y : column of R
+y : column of S
+
+R(x,y) div S(y) means gives all distinct values of x from R that are associated with all values of y in S.
+
+Implementation :
+
+SELECT * FROM R 
+WHERE x not in ( SELECT x FROM (
+(SELECT x , y FROM (select y from S ) as p cross join 
+(select distinct x from R) as sp)
+EXCEPT
+(SELECT x , y FROM R) ) AS r ); 
+

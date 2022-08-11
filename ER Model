@@ -1,0 +1,31 @@
+Entity Relationship Model(ER model)
+
+Entity-Relationship (ER) model is a visual representation of the table’s structure and the relationships between logically related tables.
+
+ In ER modeling the database structure is represented as a diagram known as ER diagram (ERD).
+ An ER diagram gives a better understanding of the overall database structure. 
+ It becomes easier to map the tables, their keys, and relationships.
+
+The ER diagram displays:
+
+Table structure along with the column names and their data types
+Primary and foreign key constraints
+Relationship between tables
+
+Following are the main components and its symbols in ER Diagrams:
+
+Rectangles: This Entity Relationship Diagram symbol represents entity types
+Ellipses : Symbol represent attributes
+Diamonds: This symbol represents relationship types
+Lines: It links attributes to entity types and entity types with other relationship types
+Primary key: attributes are underlined
+Double Ellipses: Represent multi-valued attributes
+
+
+Components of the ER Diagram:
+
+Entities
+Attributes
+Relationships
+
+https://www.guru99.com/images/1/100518_0621_ERDiagramTu12.png

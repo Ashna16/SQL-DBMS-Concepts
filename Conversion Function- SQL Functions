@@ -1,1 +1,80 @@
 
+SQL Conversion functions are single row functions which are capable of typecasting column value, literal or an expression . 
+TO_CHAR, TO_NUMBER and TO_DATE are the three functions which perform cross modification of data types.
+
+Implicit Data Type Conversion
+
+A VARCHAR2 or CHAR value can be implicitly converted to NUMBER or DATE type value by Oracle. 
+Similarly, a NUMBER or DATA type value can be automatically converted to character data by Oracle server.
+ Note that the impicit interconversion happens only when the character represents the a valid number or date type value respectively.
+
+For example, examine the below SELECT queries. 
+Both the queries will give the same result because Oracle internally treats 15000 and '15000' as same.
+
+Query-1
+
+SELECT employee_id,first_name,salary
+FROM employees
+WHERE salary > 15000;
+
+Query-2
+
+SELECT employee_id,first_name,salary
+FROM employees
+WHERE salary > '15000';
+
+Explicit Data Type Conversion
+
+SQL Conversion functions are single row functions which are capable of typecasting column value, literal or an expression .
+ TO_CHAR, TO_NUMBER and TO_DATE are the three functions which perform cross modification of data types.
+
+TO_CHAR function
+TO_CHAR function is used to typecast a numeric or date input to character type with a format model (optional).
+
+Syntax
+
+TO_CHAR(number1, [format], [nls_parameter])
+
+SELECT first_name,
+       TO_CHAR (hire_date, 'MONTH DD, YYYY') HIRE_DATE,
+	   TO_CHAR (salary, '$99999.99') Salary
+FROM employees
+WHERE rownum < 5;
+
+TO_NUMBER function
+
+The TO_NUMBER function converts a character value to a numeric datatype. 
+If the string being converted contains nonnumeric characters, the function returns an error.
+
+Syntax
+TO_NUMBER (string1, [format], [nls_parameter])
+
+SELECT  TO_NUMBER('121.23', '9G999D99') 
+FROM DUAL
+
+TO_NUMBER('121.23','9G999D99')
+------------------------------
+                        121.23
+
+SELECT  TO_NUMBER('1210.73', '9999.99') 
+FROM DUAL;
+
+TO_NUMBER('1210.73','9999.99')
+------------------------------
+                       1210.73
+
+TO_DATE function
+
+The function takes character values as input and returns formatted date equivalent of the same. The TO_DATE function allows users to enter a date in any format, and then it converts the entry into the default format used by Oracle 11g.
+
+Syntax:
+TO_DATE( string1, [ format_mask ], [ nls_language ] )
+
+SELECT TO_DATE('January 15, 1989, 11:00 A.M.',  'Month dd, YYYY, HH:MI A.M.',  'NLS_DATE_LANGUAGE = American')
+FROM DUAL;
+
+TO_DATE('
+---------
+15-JAN-89
+
+

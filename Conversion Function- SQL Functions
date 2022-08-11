@@ -76,5 +76,3 @@ FROM DUAL;
 TO_DATE('
 ---------
 15-JAN-89
-
-

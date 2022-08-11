@@ -94,3 +94,11 @@ It uses only one command:
 
 SELECT
 a. SELECT: This is the same as the projection operation of relational algebra. It is used to select the attribute based on the condition described by WHERE clause.
+
+
+ER-Diagram
+
+![SQL COMMANDS](https://www.guru99.com/images/1/100518_0621_ERDiagramTu12.png)
+
+)
+

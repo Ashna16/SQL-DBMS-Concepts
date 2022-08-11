@@ -1,1 +1,32 @@
 
+*** Consider a table is alredy made ***
+
+Write the following queries:
+
+Q. Find the names of all customers having a loan and account.
+
+A. Select customername from table where loan = 'Y' AND account= 'Y';
+
+                            OR
+{c.customer_name\ customer(c) ^ (ꟻ a) (ꟻ l) (loan (l) ^ account (a) ^ a.branchname = l.branchname)}
+
+Q. Find the name of all customer's having loan at Alkapuri Branch.
+
+A. Select customername from table where loan = 'Y' AND branchname= 'Alkapuri';
+         
+                                  OR
+{customername\customer(c) ^ ꟻ(l) (loan(l) ^ l.branchname = alkapuri)}
+
+Q. Display details of employ in deptno 10.
+
+A. Select * from table where deptno =10;
+                OR
+   {t\t ∈ emp ^ t[deptno] = 10}
+   
+Q. Display details of employ not in deptno 40.
+
+A. {t\t ∈ emp ^ t[deptno] < > 40}
+
+Q. Display the details of employ getting more than 60 marks.
+
+A. {t\t ∈ emp ^ t[marks] > 60}

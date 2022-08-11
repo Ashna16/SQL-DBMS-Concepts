@@ -30,3 +30,7 @@ A. {t\t ∈ emp ^ t[deptno] < > 40}
 Q. Display the details of employ getting more than 60 marks.
 
 A. {t\t ∈ emp ^ t[marks] > 60}
+
+Q. Display the name of all employs who are clerk or manager.
+
+A.{t\t ∈ emp ^ t[dept] = 'clerk' t[dept] = 'manager'};

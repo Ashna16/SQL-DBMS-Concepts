@@ -1,0 +1,30 @@
+Domain Relational Calculus is a non-procedural query language equivalent in power to Tuple Relational Calculus. 
+Domain Relational Calculus provides only the description of the query but it does not provide the methods to solve it.
+In Domain Relational Calculus, a query is expressed as,
+
+{ < x1, x2, x3, ..., xn > | P (x1, x2, x3, ..., xn ) } 
+where, < x1, x2, x3, …, xn > represents resulting domains variables and P (x1, x2, x3, …, xn ) represents the condition
+or formula equivalent to the Predicate calculus.
+
+
+Predicate Calculus Formula:
+
+Set of all comparison operators
+Set of connectives like and, or, not
+Set of quantifiers
+
+EXAMPLES:
+
+Query-1: Find the loan number, branch, amount of loans of greater than or equal to 100 amount.
+
+{≺l, b, a≻ | ≺l, b, a≻ ∈ loan ∧ (a ≥ 100)}
+
+
+Query-2: Find the loan number for each loan of an amount greater or equal to 150.
+
+{≺l≻ | ∃ b, a (≺l, b, a≻ ∈ loan ∧ (a ≥ 150)}
+
+
+Query-3: Find the names of all customers having a loan at the “Main” branch and find the loan amount .
+
+{≺c, a≻ | ∃ l (≺c, l≻ ∈ borrower ∧ ∃ b (≺l, b, a≻ ∈ loan ∧ (b = “Main”)))}

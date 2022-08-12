@@ -1,0 +1,14 @@
+
+
+
+1. Uid- It is used to display the user id from dual table.
+        Example: Select uid from dual;
+
+2. User: Used to display the user name from dual table
+         Example: Select user from dual;
+
+3. Nvl: It is used in fields where instead of displaying null we can display the zeros.
+        Example: select nvl ('salary', 0) from emp;
+
+4.vsize: This function shows number of bytes used for the expression.
+         Example: Select vsize('Info tech') from dual;

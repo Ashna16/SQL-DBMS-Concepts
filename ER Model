@@ -29,3 +29,37 @@ Attributes
 Relationships
 
 
+WHAT IS ENTITY?
+A real-world thing either living or non-living that is easily recognizable and nonrecognizable. 
+It is anything in the enterprise that is to be represented in our database. 
+It may be a physical thing or simply a fact about the enterprise or an event that happens in the real world.
+
+An entity can be place, person, object, event or a concept, which stores data in the database. T
+he characteristics of entities are must have an attribute, and a unique key. Every entity is made up of some ‘attributes’ 
+which represent that entity.
+
+Examples of entities:
+
+Person: Employee, Student, Patient
+Place: Store, Building
+Object: Machine, product, and Car
+Event: Sale, Registration, Renewal
+Concept: Account, Course
+Notation of an Entity
+
+Entity set:
+
+Student
+
+An entity set is a group of similar kind of entities. It may contain entities with attribute sharing similar values.
+Entities are represented by their properties, which also called attributes. All attributes have their separate values.
+For example, a student entity may have a name, age, class, as attributes.
+
+Relationship
+Relationship is nothing but an association among two or more entities. E.g., Ashna works in the Chemistry department.
+
+Attributes
+
+It is a single-valued property of either an entity-type or a relationship-type.
+For example, a lecture might have attributes: time, date, duration, place, etc.
+An attribute in ER Diagram examples, is represented by an Ellipse

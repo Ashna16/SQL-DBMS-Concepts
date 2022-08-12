@@ -1,0 +1,71 @@
+Operates on strings or character values
+
+1. initcap
+
+It converts first letter of string to capital letter.
+Example: Select initcap('computer science') from dual;
+O/P : Computer Science
+
+2. Concatenate
+
+It appends two or more literal expression,column values or variables into one string
+Example: Select concat ('computer', 'science') from dual;
+
+3. Replace
+
+It is used to replace old string from new string.
+Example: Select replace ('black and Blue','Bl' ,'j') from char
+O/P: Jack and Jues
+
+4. Lower
+It is used to convert the string to the lower case
+
+5. Upper
+It is used to convert the string to the upper case
+
+6. Substring
+It is used to extract the portion of the string
+Example: Select substr (Computer Science , 5, 4 )from dual;
+O/P: uter
+
+
+7. Translate
+Select translate ('Jack', 'J' ,'P') from dual;
+O/P: Pack
+
+8. LTrim
+Used to Trim left side characters
+Example: Select ltrim ('Computer Science' , 'Comp') from dual;
+O/P : uter Science
+
+9. RTrim
+Used to trim right side characters
+Select RTrim ('Computer Science' , 'Science') from dual;
+O/P: Computer
+
+10. Soundex
+It is a function which finds out the name which sounds like a given name with name present in table.
+Select ename from emp where soundex (ename) = soundex('NILL');
+
+11. Chr
+This function gives the equivalent character value of provided number in the given function.
+
+12. Lpad
+This function pads the given symbol,given no.of times to the left side of the string,it takes three argument.
+
+Original string, number, and character to be print.
+Eg: Select lpad('DBMS' , 10, *) from dual;
+O/p: ******DBMS
+
+13. Rpad
+Same as Lpad but functions from the right hand side
+
+14. Length
+It finds out the length of the given string
+EG:Select length ('tech') from dual;
+O/P: 4
+
+15. Concatenate
+It concatenates two or more string and displays the results.
+Example: Select ename|| 'Is getting' || 'salary from emp where salary>50,000';
+O/P: Ashna is getting 1,0000000;

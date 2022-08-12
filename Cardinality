@@ -1,0 +1,32 @@
+Defines the numerical attributes of the relationship between two entities or entity sets.
+
+Different types of cardinal relationships are:
+
+One-to-One Relationships
+One-to-Many Relationships
+May to One Relationships
+Many-to-Many Relationships
+
+1.One-to-one:
+
+One entity from entity set X can be associated with at most one entity of entity set Y and vice versa.
+Example: One student can register for numerous courses. However, all those courses have a single line back to that one student.
+
+2.One-to-many:
+
+One entity from entity set X can be associated with multiple entities of entity set Y, but an entity from entity set Y can be 
+associated with at least one entity.
+For example, one class is consisting of multiple students.
+
+3. Many to One
+
+More than one entity from entity set X can be associated with at most one entity of entity set Y. 
+However, an entity from entity set Y may or may not be associated with more than one entity from entity set X.
+For example, many students belong to the same class.
+
+4. Many to Many:
+
+One entity from X can be associated with more than one entity from Y and vice versa.
+For example, Students as a group are associated with multiple faculty members, and faculty members can be associated with 
+multiple students.
+

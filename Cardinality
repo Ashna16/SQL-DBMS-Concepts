@@ -30,3 +30,10 @@ One entity from X can be associated with more than one entity from Y and vice ve
 For example, Students as a group are associated with multiple faculty members, and faculty members can be associated with 
 multiple students.
 
+STEPS TO CREATE AN ER DIAGRAM:
+
+1. IDENTIFY ENTITY
+2. IDENTIFY RELATIONSHIP BETWEEN ENTITIES
+3. IDENTIFY CARDINALITY OF ERELATIONSHIP
+4. IDENTIFY ATTRIBUTES
+5.COMPLETE THE ER DIAGRAM
